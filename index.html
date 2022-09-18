@@ -8,10 +8,36 @@
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
+    
 </head>
 
 <body>
     <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div id="welcome-screen">
+        <form id="name-form">
+            <div> 
+                <label for="username">Your Name</label>
+                <input placeholder="Enter Name Here" id="username" name="username" class="form-control"></input>
+            </div>
+            <button id="start-game-button" class="btn btn-primary">Start Game!</button>
+        </form>
+
+    </div>
+    <div id="game-screen"></div>
+    <div id="score-tally"> <p id="score"></p> </div>
+    <form id="game-form"> 
+        <div class="form-group"> 
+            <label for="user-selection">Select Your Choice</label>
+            <select id="user-selection" name="user-selection" class="custom-select">
+                <option value="Rock">Rock</option>
+                <option value="Paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+        </div> 
+        <button id="go-button" class="btn btn-success">Go!</button>
+    </form>
+    <p id="game-history"></p>
         <!-- WORK FROM INSIDE THIS CONTAINER-->
 
     </div>
